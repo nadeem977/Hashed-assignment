@@ -1,0 +1,973 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <title>Hire me please</title>
+</head>
+
+<body>
+
+  <section class="bg-[#013D29] hidden md:flex text-white items-center px-5 
+        font-[Outfit] font-[400] text-[14px] justify-between h-[44px]">
+    <p>Delivery lead time will be impacted due to COVID-19. Stay safe!</p>
+    <div class="flex items-center gap-5">
+      <p class="text-[#669082]"> Select Language:</p>
+      <div class="flex items-center gap-4">
+        <button class="font-bold">English</button>
+        <div class="bg-[#678B7F] px-[1px] my-auto h-[20px] "></div>
+        <button class="text-[#669082]">العربیہ</button>
+      </div>
+    </div>
+  </section>
+  <section class="flex md:hidden px-5 py-2">
+    <div class="flex items-center justify-between gap-2 w-full">
+      <div class="flex items-center gap-5">
+        <img src="../assets/MENU.svg" alt="menu" class="menu_nav cursor-pointer">
+        <img src="../assets/Logo.svg" alt="logo" class="w-[80px]">
+      </div>
+      <button class="bg-[#E9E9E9] w-[35px] h-[35px] relative rounded-full flex items-center justify-center "><i
+          class="bi bi-cart2"></i>
+        <span
+          class="absolute -top-[8px] -right-[9px] text-[10px] font-semibold bg-[#FFBF00] border-[3px] border-white rounded-full w-[24px] h-[24px] flex items-center justify-center">03</span></button>
+
+    </div>
+  </section>
+
+
+  <nav id="manu_nav" class=" top-[-25rem] absolute top-[-25rem] z-50 w-full md:hidden px-5 py-4 bg-white transition-all duration-300 ease-in-out
+  ">
+    <div class="flex items-center gap-2">
+      <div id="custom-select" class="relative w-full font-[Outfit]">
+
+        <button id="dropdown-button"
+          class="flex items-center justify-between w-full border-[1px] rounded-full border-[#219653] h-[40px] px-4 outline-none">
+          <span id="selected-option" class="flex items-center gap-3">
+            <img src="../assets/pakistan.png" class="h-[16px]" alt="flag"> Pakistan
+          </span>
+          <img src="../assets/arrow.svg" alt="icon">
+        </button>
+
+        <!-- Dropdown Options -->
+        <ul id="dropdown-options"
+          class="absolute z-50 hidden w-full mt-1 bg-white border border-[#E7E7E7] rounded-lg shadow-lg">
+          <li data-value="1" class="px-4 py-2 cursor-pointer hover:bg-[#E9FBF2] gap-3 flex items-center">
+            <img src="../assets/pakistan.png" class="h-[16px]" alt="flag"> Pakistan
+          </li>
+          <li data-value="2" class="px-4 py-2 cursor-pointer hover:bg-[#E9FBF2] gap-3 flex items-center">
+            <img src="../assets/dubai.png" alt="" class="h-[16px]">Dubai
+          </li>
+          <li data-value="3" class="px-4 py-2 cursor-pointer hover:bg-[#E9FBF2] gap-3 flex items-center">
+            <img src="../assets/usa.png" alt="" class="h-[16px]">
+            America
+          </li>
+        </ul>
+      </div>
+      <div class="relative inline-block text-left">
+        <button type="button" id="menu-button"
+          class="inline-flex custom-gradient h-[40px] rounded-[10px] w-[44px] flex items-center justify-center text-white"
+          aria-expanded="false" aria-haspopup="true">
+          <i class="bi bi-sliders"></i>
+        </button>
+        <div id="dropdown-menu"
+          class="hidden absolute font-[Inter] right-0 z-10 mt-2 py-2 z-50 w-[180px] origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 "
+          role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+          <div class="py-1" role="none">
+            <li class="block px-4 py-2 text-[14px] cursor-pointer hover:bg-[#E9FBF2]" role="menuitem" tabindex="-1"
+              id="menu-item-0">
+              <i class="bi bi-person w-[20px] h-[20px font-semibold"></i> Customer Login
+            </li>
+            <li class="block px-4 py-2 text-[14px]  cursor-pointer hover:bg-[#E9FBF2] " role="menuitem" tabindex="-1"
+              id="menu-item-1">
+              <i class="bi bi-person-add w-[20px] font-semibold h-[20px]"></i> Merchant Login
+            </li>
+          </div>
+        </div>
+      </div>
+      <button class="bg-[#E9E9E9] min-w-[40px] min-h-[40px] rounded-full flex items-center justify-center "><i
+          class="bi bi-person"></i></button>
+    </div>
+    <div class="pl-2 flex gap-3 items-center w-full overflow-hidden border rounded-[10px] w-full my-4">
+      <i class="bi bi-search text-[#717171]"></i>
+      <input type="search" placeholder="Search..." class="w-full border-none outline-none py-2">
+    </div>
+    <ul class="flex flex-col gap-3 justify-between  font-[Outfit] text-[14px] uppercase">
+      <li class="flex items-center gap-3 cursor-pointer hover:text-[#219653]">
+        <img src="../assets/Home.svg" alt="icon" class="w-[20px] h-[20px]"> Home
+      </li>
+      <li class="flex items-center gap-3 cursor-pointer hover:text-[#219653]">
+        <img src="../assets/Dinning.svg" alt="icon" class="w-[20px] h-[20px]"> Dinning
+      </li>
+      <li class="flex items-center gap-3 cursor-pointer hover:text-[#219653]">
+        <img src="../assets/Salon.svg" alt="icon" class="w-[20px] h-[20px]"> Salon/Spa
+      </li>
+      <li class="flex items-center gap-3 cursor-pointer hover:text-[#219653]">
+        <img src="../assets/en.svg" alt="icon" class="w-[20px] h-[20px]"> Entertainment
+      </li>
+      <li class="flex items-center gap-3 cursor-pointer hover:text-[#219653]">
+        <img src="../assets/Homes.svg" alt="icon" class="w-[20px] h-[20px]"> Home Services
+      </li>
+      <span class="flex gap-3  justify-between">
+        <li class="flex items-center gap-3 cursor-pointer hover:text-[#219653]">
+          <i class="bi bi-buildings text-[#219653] text-[20px]"></i> Hashed System
+        </li>
+        <button id="close-menu"><i class="bi bi-x-lg text-[#013D29] text-[20px]"></i></button>
+      </span>
+    </ul>
+  </nav>
+
+
+  <section class=" p-5 max-w-[1250px] mx-auto hidden md:flex items-center justify-between gap-3 ">
+    <div class="flex gap-4 items-center">
+      <img src="../assets/Logo.svg" alt="logo" class="w-[136px] h-[44px]">
+      <div id="custom-select" class="relative w-[159px] font-[Outfit]">
+
+        <button id="dropdown-button"
+          class="flex items-center justify-between w-full border-[1px] rounded-full border-[#219653] h-[40px] px-4 outline-none">
+          <span id="selected-option" class="flex items-center gap-3">
+            <img src="../assets/pakistan.png" class="h-[16px]" alt="flag"> Pakistan
+          </span>
+          <img src="../assets/arrow.svg" alt="icon">
+        </button>
+
+        <!-- Dropdown Options -->
+        <ul id="dropdown-options"
+          class="absolute z-10 hidden w-full mt-1 bg-white border border-[#E7E7E7] rounded-lg shadow-lg">
+          <li data-value="1" class="px-4 py-2 cursor-pointer hover:bg-[#E9FBF2] gap-3 flex items-center">
+            <img src="../assets/pakistan.png" class="h-[16px]" alt="flag"> Pakistan
+          </li>
+          <li data-value="2" class="px-4 py-2 cursor-pointer hover:bg-[#E9FBF2] gap-3 flex items-center">
+            <img src="../assets/dubai.png" alt="" class="h-[16px]">Dubai
+          </li>
+          <li data-value="3" class="px-4 py-2 cursor-pointer hover:bg-[#E9FBF2] gap-3 flex items-center">
+            <img src="../assets/usa.png" alt="" class="h-[16px]">
+            America
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="flex items-center gap-5 font-[Outfit]">
+      <div class="flex items-center gap-3">
+        <div class="pl-2 flex gap-3 items-center overflow-hidden border rounded-[10px] w-full max-w-[288px]">
+          <i class="bi bi-search text-[#717171]"></i>
+          <input type="search" placeholder="Search..." class="w-full border-none outline-none py-2">
+        </div>
+        <div class="relative inline-block text-left">
+          <button type="button" id="menu-button"
+            class="inline-flex custom-gradient h-[40px] rounded-[10px] w-[44px] flex items-center justify-center text-white"
+            aria-expanded="false" aria-haspopup="true">
+            <i class="bi bi-sliders"></i>
+          </button>
+          <div id="dropdown-menu"
+            class="hidden absolute font-[Inter] -right-20 z-10 mt-2 py-2 w-[200px] origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 "
+            role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+            <div class="py-1" role="none">
+              <li class="block px-4 py-2 text-[14px] cursor-pointer hover:bg-[#E9FBF2]" role="menuitem" tabindex="-1"
+                id="menu-item-0">
+                <i class="bi bi-person w-[20px] h-[20px font-semibold"></i> Customer Login
+              </li>
+              <li class="block px-4 py-2 text-[14px]  cursor-pointer hover:bg-[#E9FBF2] " role="menuitem" tabindex="-1"
+                id="menu-item-1">
+                <i class="bi bi-person-add w-[20px] font-semibold h-[20px]"></i> Merchant Login
+              </li>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="bg-[#E9E9E9] w-[40px] h-[40px] relative rounded-full flex items-center justify-center "><i
+          class="bi bi-cart2"></i>
+        <span
+          class="absolute -top-[10px] -right-[18px] text-[12px] font-semibold bg-[#FFBF00] border-[3px] border-white rounded-full w-[34px] h-[34px] flex items-center justify-center">03</span></button>
+      <button class="bg-[#E9E9E9] w-[40px] h-[40px] rounded-full flex items-center justify-center "><i
+          class="bi bi-person"></i></button>
+    </div>
+  </section>
+  <hr>
+  <header class="hidden md:flex">
+    <nav class="w-full">
+      <ul
+        class="flex w-full items-center justify-between p-5 max-w-[1250px] mx-auto   font-[Outfit] text-[14px] uppercase">
+        <li class="flex items-center gap-3 cursor-pointer hover:text-[#219653]">
+          <img src="../assets/Home.svg" alt="icon" class="w-[30px] h-[30px]"> Home
+        </li>
+        <li class="flex items-center gap-3 cursor-pointer hover:text-[#219653]">
+          <img src="../assets/Dinning.svg" alt="icon" class="w-[30px] h-[30px] "> Dinning
+        </li>
+        <li class="flex items-center gap-3 cursor-pointer hover:text-[#219653]">
+          <img src="../assets/Salon.svg" alt="icon" class="w-[30px] h-[30px]"> Salon/Spa
+        </li>
+        <li class="flex items-center gap-3 cursor-pointer hover:text-[#219653]">
+          <img src="../assets/en.svg" alt="icon" class="w-[30px] h-[30px]"> Entertainment
+        </li>
+        <li class="flex items-center gap-3 cursor-pointer hover:text-[#219653]">
+          <img src="../assets/Homes.svg" alt="icon" class="w-[30px] h-[30px]"> Home Services
+        </li>
+        <li class="flex items-center gap-3 cursor-pointer hover:text-[#219653]">
+          <i class="bi bi-buildings text-[#219653] text-[30px]"></i> Hashed System
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <section class="bg-[#F0FFF8] min-h-[600px]">
+    <div class=" grid md:grid-cols-2 md:px-5 max-w-[1250px] mx-auto  w-full">
+      <div class=" font-[Outfit] p-5 md:p-0 relative w-full">
+        <div class="max-w-[540px] mx-auto m-5 md:mt-[5rem] flex flex-col gap-4">
+          <h1 class="text-[35px] md:text-[60px] font-bold leading-[40px] md:leading-[65px] z-10">Get The Best <span
+              class="text-[#219653] underline">Deals</span> Near By You!</h1>
+          <p class="text-[18px] font-[Outfit] max-w-[400px] leading-[24px] z-10">Explore nearby deals on map and buy
+            deals
+            to
+            enjoy quality food with your family</p>
+          <button class="bg-[#013D29] text-white w-[169px] h-[56px] z-10 rounded-full">Explore</button>
+          <img src="../assets/OBJECTS.svg" alt="icons"
+            class="max-w-[150px] sm:max-w-[230px] md:max-w-[370px] absolute bottom-0 right-0 md:-right-[90px]">
+        </div>
+      </div>
+      <div class="relative ">
+        <video id="custom-video" class="w-full h-full md:min-h-[600px] object-cover" preload="metadata">
+          <source src="../assets/video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <button id="play-pause-btn"
+          class="absolute inset-0 m-auto w-[60px] md:w-[141px] h-[60px] md:h-[141px] bg-[#219653] text-white rounded-full flex items-center justify-center opacity-100 transition-opacity duration-300">
+          <img src="../assets/Play.svg" alt="icon" class="w-[30px] md:w-auto ">
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- select section -->
+  <section class="w-full bg-[#F9F9F9] pb-5 relative">
+    <div
+      class="shadow font-[Outfit] min-h-[160px] mx-auto w-[90%] lg:w-full bg-white relative z-[1000000000] max-w-[1100px] p-5 rounded-[10px]  absolute -top-20  flex flex-wrap items-center gap-4 justify-between">
+
+      <div class="grid md:grid-cols-3 gap-2 w-full">
+        <div class="relative w-full">
+          <button
+            class="dropdown-btn w-full bg-[#F9F9F9] border border-[#E7E7E7] text-gray-600 py-2 px-4 rounded-[10px] flex justify-between items-center">
+            <span id="selected-option1">Dining</span>
+            <img src="../assets/arrow.svg" alt="icon">
+          </button>
+          <ul
+            class="dropdown-menu hidden absolute bg-white border border-[#E7E7E7] rounded-lg shadow-md mt-1 w-full z-10">
+            <li class="dropdown-item px-4 py-2 hover:bg-[#F0FFF8] cursor-pointer">Dining</li>
+            <li class="dropdown-item px-4 py-2 hover:bg-[#F0FFF8] cursor-pointer">Shopping</li>
+            <li class="dropdown-item px-4 py-2 hover:bg-[#F0FFF8] cursor-pointer">Travel</li>
+          </ul>
+        </div>
+        <!-- Custom Dropdown 2 -->
+        <div class="relative w-full">
+          <button
+            class="dropdown-btn w-full bg-[#F9F9F9] border border-[#E7E7E7] text-gray-600 py-2 px-4 rounded-[10px] flex justify-between items-center ">
+            <span id="selected-option2">Select All</span>
+            <img src="../assets/arrow.svg" alt="icon">
+          </button>
+          <ul
+            class="dropdown-menu hidden absolute bg-white border border-[#E7E7E7] rounded-lg shadow-md mt-1 w-full z-10">
+            <li class="dropdown-item px-4 py-2 hover:bg-[#F0FFF8] cursor-pointer">Select All</li>
+            <li class="dropdown-item px-4 py-2 hover:bg-[#F0FFF8] cursor-pointer">Option 1</li>
+            <li class="dropdown-item px-4 py-2 hover:bg-[#F0FFF8] cursor-pointer">Option 2</li>
+          </ul>
+        </div>
+        <!-- Custom Dropdown 3 -->
+        <div class="relative w-full">
+          <button
+            class="dropdown-btn w-full bg-[#F9F9F9] border border-[#E7E7E7] text-gray-600 py-2 px-4 rounded-[10px] flex justify-between items-center ">
+            <span id="selected-option2">Select Sub Category</span>
+            <img src="../assets/arrow.svg" alt="icon">
+          </button>
+          <ul
+            class="dropdown-menu hidden absolute bg-white border border-[#E7E7E7] rounded-lg shadow-md mt-1 w-full z-10">
+            <li class="dropdown-item px-4 py-2 hover:bg-[#F0FFF8] cursor-pointer">Select All</li>
+            <li class="dropdown-item px-4 py-2 hover:bg-[#F0FFF8] cursor-pointer">Option 1</li>
+            <li class="dropdown-item px-4 py-2 hover:bg-[#F0FFF8] cursor-pointer">Option 2</li>
+          </ul>
+        </div>
+      </div>
+      <div class="grid md:grid-cols-2 gap-2 w-full">
+        <div class="grid md:grid-cols-2 gap-2 w-full">
+          <div class="relative w-full">
+            <button
+              class="dropdown-btn w-full bg-[#F9F9F9] border border-[#E7E7E7] text-gray-600 py-2 px-4 rounded-[10px] flex justify-between items-center">
+              <span id="selected-option1">Lahore</span>
+              <img src="../assets/arrow.svg" alt="icon">
+            </button>
+            <ul
+              class="dropdown-menu hidden absolute bg-white border border-[#E7E7E7] rounded-lg shadow-md mt-1 w-full z-10">
+              <li class="dropdown-item px-4 py-2 hover:bg-[#F0FFF8] cursor-pointer">islamabad</li>
+              <li class="dropdown-item px-4 py-2 hover:bg-[#F0FFF8] cursor-pointer">Shopping</li>
+              <li class="dropdown-item px-4 py-2 hover:bg-[#F0FFF8] cursor-pointer">Travel</li>
+            </ul>
+          </div>
+          <!-- Custom Dropdown 2 -->
+          <div class="relative w-full">
+            <button
+              class="dropdown-btn w-full bg-[#F9F9F9] border border-[#E7E7E7] text-gray-600 py-2 px-4 rounded-[10px] flex justify-between items-center ">
+              <span id="selected-option2">Destination</span>
+              <img src="../assets/arrow.svg" alt="icon">
+            </button>
+            <ul
+              class="dropdown-menu hidden absolute bg-white border border-[#E7E7E7] rounded-lg shadow-md mt-1 w-full z-10">
+              <li class="dropdown-item px-4 py-2 hover:bg-[#F0FFF8] cursor-pointer">Select All</li>
+              <li class="dropdown-item px-4 py-2 hover:bg-[#F0FFF8] cursor-pointer">Option 1</li>
+              <li class="dropdown-item px-4 py-2 hover:bg-[#F0FFF8] cursor-pointer">Option 2</li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row items-center gap-3 justify-between">
+          <div
+            class="flex items-center pl-2 border-[#E7E7E7] border-[1px] md:max-w-[440px] w-full rounded-[10px] bg-[#F9F9F9] overflow-hidden">
+            <img src="../assets/Search.svg" alt="icon">
+            <input type="search" placeholder="Search" class="w-full outline-none border-none p-2">
+          </div>
+          <button
+            class="bg-[#013D29] font-bold text-white w-full md:max-w-[140px] w-full h-[40px] rounded-full">Search</button>
+        </div>
+      </div>
+
+    </div>
+
+    <section class="mx-auto max-w-[1250px] p-5 pt-0 mb-10 font-[Outfit]">
+      <div class="grid grid-cols-2 sm:flex items-center flex-wrap justify-between gap-5">
+        <div class="flex flex-col items-center gap-2">
+          <img src="../assets/i1.svg" alt="">
+          <h1 class="text-[#303632] text-[16px]">Dinning</h1>
+        </div>
+        <div class="flex flex-col items-center gap-2">
+          <img src="../assets/i2.svg" alt="">
+          <h1 class="text-[#303632] text-[16px]">Saloon/Spa</h1>
+        </div>
+        <div class="flex flex-col items-center gap-2">
+          <img src="../assets/i3.svg" alt="">
+          <h1 class="text-[#303632] text-[16px]">Entertainment</h1>
+        </div>
+        <div class="flex flex-col items-center gap-2">
+          <img src="../assets/i4.svg" alt="">
+          <h1 class="text-[#303632] text-[16px]">Cleaning</h1>
+        </div>
+        <div class="flex flex-col items-center gap-2">
+          <img src="../assets/i2.svg" alt="">
+          <h1 class="text-[#303632] text-[16px]">Cleaning</h1>
+        </div>
+        <div class="flex flex-col items-center gap-2">
+          <img src="../assets/i1.svg" alt="">
+          <h1 class="text-[#303632] text-[16px]">Cleaning</h1>
+        </div>
+        <div class="flex flex-col items-center gap-2">
+          <img src="../assets/i3.svg" alt="">
+          <h1 class="text-[#303632] text-[16px]">Cleaning</h1>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="mx-auto max-w-[1250px] p-5 my-10 font-[Outfit]">
+      <div class="flex flex-wrap md:grid md:grid-cols-3 gap-5 border-[#BED8CB] border-t-[1px] pt-10">
+        <div class="flex gap-4 items-center justify-center max-w-[308px] w-fit md:w-full mx-auto">
+          <img src="../assets/c3.svg" alt="icon" class="max-w-[50px]">
+          <div>
+            <h1 class="font-semibold text-[20px] leading-[24px] mb-1">Amazing Last Minute Discounts</h1>
+            <p class="text-[#8a8a8a] text-[14px]">Get Amazing Last Minute Discounts on your favorite categories food, of
+              beauty, getaways & more.</p>
+          </div>
+        </div>
+        <div class="flex gap-4 border-[#BED8CB] items-center justify-center mx-auto w-fit md:w-full
+           py-10 md:p-0 border-y-[1px] md:border-y-[0px]  md:border-x-[1px]">
+          <img src="../assets/c2.svg" alt="icon" class="max-w-[50px]">
+          <div>
+            <h1 class="font-semibold text-[20px]">Save</h1>
+            <p class="text-[#8a8a8a] text-[14px]">Save Money with our deals of & offers</p>
+          </div>
+        </div>
+        <div class="flex gap-4 items-center justify-center mx-auto w-fit md:w-full max-w-[308px]">
+          <img src="../assets/c1.svg" alt="icon" class="max-w-[50px]">
+          <div>
+            <h1 class="font-semibold text-[20px]">Secure Payments</h1>
+            <p class="text-[#8a8a8a] text-[14px]">The Secure payment methods throughout the checkout process of to keep
+              your data secure & safe.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <section class="mx-auto max-w-[1250px] p-5 my-10">
+    <div class="flex items-center flex-wrap md:flex-row justify-between gap-2 font-[Outfit]">
+      <span>
+        <h1 class="text-[35px] md:text-[54px] font-semibold">Nearby <span class="underline text-[#219653]">Deals</span>
+        </h1>
+        <p class="text-[15px] ">Explore nearby deals on map and buy deals to enjoy quality food with your family</p>
+      </span>
+      <button class="bg-[#013D29] w-full text-white max-w-[170px] h-[56px] rounded-full">View on Map</button>
+    </div>
+    <div class="grid md:grid-cols-3 my-10 gap-5">
+      <div class="card w-full shadow-lg font-[Outfit] rounded-b-[20px]">
+        <div class="relative">
+          <img src="../assets/b1.png" alt="" class="w-full md:max-w-[386px]">
+          <div
+            class="absolute top-5 right-5 w-[40px] h-[40px] rounded-full bg-white shadow-lg flex items-center justify-center ">
+            <img src="../assets/Heart.svg" data-active="false" alt="Heart" class="w-[20px] cursor-pointer heart" />
+
+          </div>
+        </div>
+        <div class="p-4 ">
+          <div class="flex items-center justify-between gap-1">
+            <div class="flex gap-1 items-center">
+              <img src="../assets/str1.svg" alt="">
+              <img src="../assets/str1.svg" alt="">
+              <img src="../assets/str1.svg" alt="">
+              <img src="../assets/str2.png" alt="">
+            </div>
+            <div class="flex items-center gap-2"><img src="../assets/p.svg" alt=""> Flat 15% Off</div>
+          </div>
+          <h1 class="text-[24px] font-semibold mt-2 mb-1">Loaded Fries At Aloo Cart</h1>
+          <div class="flex items-center gap-2 mt-1">
+            <img src="../assets/l.svg" alt="icon">
+            <p class="text-[#8a8a8a] text-[14px]">Pakistan, Lahore .</p>
+          </div>
+          <div class="flex items-center gap-2 mt-2">
+            <img src="../assets/l.svg" alt="icon">
+            <p class="text-[#8a8a8a] text-[14px]">Pakistan, Lahore</p>
+            <div class="relative">
+              <button class="text-[#219653] text-[14px] more">+2 more</button>
+
+              <div
+                class="hidden shadow-lg show animate-fade-in  border-[#219653] border-[1px] bg-white w-[300px] rounded-lg p-5 absolute -top-[14rem] -left-[8rem]">
+                <h1 class="text-[20px] font-semibold mb-2">Locations</h1>
+                <div class="flex items-center gap-2 mt-1">
+                  <img src="../assets/l.svg" alt="icon">
+                  <p class="text-[#8a8a8a] text-[14px]">Southwest, Washington D.C.</p>
+                </div>
+                <div class="flex items-center gap-2 mt-2">
+                  <img src="../assets/l.svg" alt="icon">
+                  <p class="text-[#8a8a8a] text-[14px]">East Village, New York</p>
+                </div>
+                <div class="flex items-center gap-2 mt-2">
+                  <img src="../assets/l.svg" alt="icon">
+                  <p class="text-[#8a8a8a] text-[14px]">Lower East Side, New York</p>
+                </div>
+                <div class="flex items-center gap-2 mt-2">
+                  <img src="../assets/l.svg" alt="icon">
+                  <p class="text-[#8a8a8a] text-[14px]">Midtown East, New York</p>
+                </div>
+                <div class="flex items-center gap-2 mt-2">
+                  <img src="../assets/l.svg" alt="icon">
+                  <p class="text-[#8a8a8a] text-[14px]">Southeast, Washington D.C.</p>
+                </div>
+                <div
+                  class="-rotate-90 w-fit absolute left-1/2 right-1/2 transform -translate-x-1/2 -translate-y-1/2 -bottom-[23px] ">
+                  <div class="bg-[#219653] w-[0.8px] h-[9px] rotate-[59deg] top-[4.3px] 	relative"></div>
+                  <div class="bg-[#219653] w-[0.8px] h-[10px] rotate-[-50deg]	relative "></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center justify-between gap-2 border-t-[1px] p-4 border-[#f3f3f3]">
+          <div class="flex items-center gap-3">
+            <img
+              src="https://s3-alpha-sig.figma.com/img/eadb/b36f/e671035e79447446d147615c9062f750?Expires=1731888000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qChAgL0qEoWU8gVk19KSdU8K7VwrZ0HlOUaNhzbuDEXlUh3vFeCwrU5tc~uJ-hLPevnT5kYsFbDRVcq8VK6NIQYYMm7fqgT0fTXwgirRbiSQJg27ymiPih5NFZT-OeAg8XgJ9CYaB7zf27TvWh8NrvegYd3-sz1Cb~FeB9vnO740jnhzQ6VsgL5LhtvmY5tthsgoBj48wnzDFo3XGBTsSr7akym2fGDY1q~emQnmV23siESNn5rnJXbk8187y7CEE~EXyLM6Dx83EI55I8W~YCH8PjuMkWogJ2ag4u30eXoGtb60sn8Jmv7uEr5eQ0YSRGDSfXkH-K20PwJnWxHcLQ__"
+              class="w-[36px] h-[36px] rounded-full object-cover" alt="image">
+            <h1>Aloo Cart</h1>
+          </div>
+          <button class="bg-[#219653] text-white w-full rounded-full max-w-[120px] h-[34px]">Get Offer</button>
+        </div>
+      </div>
+      <div class="card w-full shadow-lg font-[Outfit] rounded-b-[20px]">
+        <div class="relative">
+          <img src="../assets/b2.png" alt="" class="w-full md:max-w-[386px]">
+          <div
+            class="absolute top-5 right-5 w-[40px] h-[40px] rounded-full bg-white shadow-lg flex items-center justify-center">
+            <img src="../assets/Heart.svg" data-active="false" alt="Heart" class="w-[20px] cursor-pointer heart" />
+
+          </div>
+        </div>
+        <div class="p-4 ">
+          <div class="flex items-center justify-between gap-1">
+            <div class="flex gap-1 items-center">
+              <img src="../assets/str1.svg" alt="">
+              <img src="../assets/str1.svg" alt="">
+              <img src="../assets/str1.svg" alt="">
+              <img src="../assets/str2.png" alt="">
+            </div>
+            <div class="flex items-center gap-2"><img src="../assets/p.svg" alt=""> Flat 15% Off</div>
+          </div>
+          <h1 class="text-[24px] font-semibold mt-2 mb-1">Loaded Fries At Aloo Cart</h1>
+          <div class="flex items-center gap-2 mt-1">
+            <img src="../assets/l.svg" alt="icon">
+            <p class="text-[#8a8a8a] text-[14px]">Pakistan, Lahore .</p>
+          </div>
+          <div class="flex items-center gap-2 mt-2">
+            <img src="../assets/l.svg" alt="icon">
+            <p class="text-[#8a8a8a] text-[14px]">Pakistan, Lahore</p>
+            <div class="relative">
+              <button class="text-[#219653] text-[14px] more">+2 more</button>
+
+              <div
+                class="hidden shadow-lg show animate-fade-in  border-[#219653] border-[1px] bg-white w-[300px] rounded-lg p-5 absolute -top-[14rem] -left-[8rem]">
+                <h1 class="text-[20px] font-semibold mb-2">Locations</h1>
+                <div class="flex items-center gap-2 mt-1">
+                  <img src="../assets/l.svg" alt="icon">
+                  <p class="text-[#8a8a8a] text-[14px]">Southwest, Washington D.C.</p>
+                </div>
+                <div class="flex items-center gap-2 mt-2">
+                  <img src="../assets/l.svg" alt="icon">
+                  <p class="text-[#8a8a8a] text-[14px]">East Village, New York</p>
+                </div>
+                <div class="flex items-center gap-2 mt-2">
+                  <img src="../assets/l.svg" alt="icon">
+                  <p class="text-[#8a8a8a] text-[14px]">Lower East Side, New York</p>
+                </div>
+                <div class="flex items-center gap-2 mt-2">
+                  <img src="../assets/l.svg" alt="icon">
+                  <p class="text-[#8a8a8a] text-[14px]">Midtown East, New York</p>
+                </div>
+                <div class="flex items-center gap-2 mt-2">
+                  <img src="../assets/l.svg" alt="icon">
+                  <p class="text-[#8a8a8a] text-[14px]">Southeast, Washington D.C.</p>
+                </div>
+                <div
+                  class="-rotate-90 w-fit absolute left-1/2 right-1/2 transform -translate-x-1/2 -translate-y-1/2 -bottom-[23px] ">
+                  <div class="bg-[#219653] w-[0.8px] h-[9px] rotate-[59deg] top-[4.3px] 	relative"></div>
+                  <div class="bg-[#219653] w-[0.8px] h-[10px] rotate-[-50deg]	relative "></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center justify-between gap-2 border-t-[1px] p-4 border-[#f3f3f3]">
+          <div class="flex items-center gap-3">
+            <img
+              src="https://s3-alpha-sig.figma.com/img/c030/529d/10249ab08c60795694cd15b7577130e2?Expires=1731888000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=l3kRTHwDzfXcqOt5WJikxTVYSTn2sfSmFbhUN~doqklGT56Bcnf~OGLNAThXKERl-TprQxbLfc43K8C3MrWjkRXHnJNYJMqYCNoo9vOOmpDBANKAHJdXw7sKY4wn74OWdc6YzszCttfEitDj~KTocCZ7JmWUEBzRxX8nCIIDrzfzslpKQeuS6Tfcg2OK2FVCjli0DZ-tncUYiClXsJVDu-iBGKVkc9sGYmvCGMgKEw-XOx18sA1w7KNI6tUGHpwV7cWHmX7qB72HXDiMzjl9yVLYk4lO~dtO6Sj6MfpzMT1RXBFB0c82CQMLs12hT58ojEgeviX88bpbEOnjo~aUFQ__"
+              class="w-[36px] h-[36px] rounded-full object-cover" alt="image">
+            <h1>Aloo Cart</h1>
+          </div>
+          <button class="bg-[#219653] text-white w-full rounded-full max-w-[120px] h-[34px]">Get Offer</button>
+        </div>
+      </div>
+      <div class="card w-full shadow-lg font-[Outfit] rounded-b-[20px]">
+        <div class="relative">
+          <img src="../assets/b3.png" alt="" class="w-full md:max-w-[386px]">
+          <div
+            class="absolute top-5 right-5 w-[40px] h-[40px] rounded-full bg-white shadow-lg flex items-center justify-center">
+            <img src="../assets/Heart.svg" data-active="false" alt="Heart" class="w-[20px] cursor-pointer heart" />
+
+          </div>
+        </div>
+        <div class="p-4 ">
+          <div class="flex items-center justify-between gap-1">
+            <div class="flex gap-1 items-center">
+              <img src="../assets/str1.svg" alt="">
+              <img src="../assets/str1.svg" alt="">
+              <img src="../assets/str1.svg" alt="">
+              <img src="../assets/str2.png" alt="">
+            </div>
+            <div class="flex items-center gap-2"><img src="../assets/p.svg" alt=""> Flat 15% Off</div>
+          </div>
+          <h1 class="text-[24px] font-semibold mt-2 mb-1">Loaded Fries At Aloo Cart</h1>
+          <div class="flex items-center gap-2 mt-1">
+            <img src="../assets/l.svg" alt="icon">
+            <p class="text-[#8a8a8a] text-[14px]">Pakistan, Lahore .</p>
+          </div>
+          <div class="flex items-center gap-2 mt-2">
+            <img src="../assets/l.svg" alt="icon">
+            <p class="text-[#8a8a8a] text-[14px]">Pakistan, Lahore</p>
+            <div class="relative">
+              <button class="text-[#219653] text-[14px] more">+2 more</button>
+
+              <div
+                class="hidden show shadow-lg animate-fade-in  border-[#219653] border-[1px] bg-white w-[300px] rounded-lg p-5 absolute -top-[14rem] -left-[8rem]">
+                <h1 class="text-[20px] font-semibold mb-2">Locations</h1>
+                <div class="flex items-center gap-2 mt-1">
+                  <img src="../assets/l.svg" alt="icon">
+                  <p class="text-[#8a8a8a] text-[14px]">Southwest, Washington D.C.</p>
+                </div>
+                <div class="flex items-center gap-2 mt-2">
+                  <img src="../assets/l.svg" alt="icon">
+                  <p class="text-[#8a8a8a] text-[14px]">East Village, New York</p>
+                </div>
+                <div class="flex items-center gap-2 mt-2">
+                  <img src="../assets/l.svg" alt="icon">
+                  <p class="text-[#8a8a8a] text-[14px]">Lower East Side, New York</p>
+                </div>
+                <div class="flex items-center gap-2 mt-2">
+                  <img src="../assets/l.svg" alt="icon">
+                  <p class="text-[#8a8a8a] text-[14px]">Midtown East, New York</p>
+                </div>
+                <div class="flex items-center gap-2 mt-2">
+                  <img src="../assets/l.svg" alt="icon">
+                  <p class="text-[#8a8a8a] text-[14px]">Southeast, Washington D.C.</p>
+                </div>
+                <div
+                  class="-rotate-90 w-fit absolute left-1/2 right-1/2 transform -translate-x-1/2 -translate-y-1/2 -bottom-[23px] ">
+                  <div class="bg-[#219653] w-[0.8px] h-[9px] rotate-[59deg] top-[4.3px] 	relative"></div>
+                  <div class="bg-[#219653] w-[0.8px] h-[10px] rotate-[-50deg]	relative "></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center justify-between gap-2 border-t-[1px] p-4 border-[#f3f3f3]">
+          <div class="flex items-center gap-3">
+            <img
+              src="https://s3-alpha-sig.figma.com/img/048e/9d98/14baed5c8ba185d8ac2ac942a3f0c037?Expires=1731888000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=lJuESNhnwc07afaJmsgj1la30eFZbR9quoc1hDANRyJw1B36e03EpyxUvz3QiYsyoezz~5WHZUH6MXDcnimHK-NUtuGv5O1OAlszHpEiyE3USZZEvm~wz5qwwX2O8inZp1cJqfyarCE4H9dg-r9aQfJIgNpUSsfbiDnB2laRBo8WP6l-U3ZzivM5qC9fEVbO~5gtoKzG4nYDUZO2H1cy0okRuL9dxxB9OC3aNSGZZxm5IzQ3f4Rqmm9d4WDSIYyu0PgkoZP~CQhPtyWhMnzzBxMXqfxNBmBHz~2SrDB-NhtZBuz9i~NGbWmeTY7L~kIY3ojbt~XbnS7USDCu7NwwVg__"
+              class="w-[36px] h-[36px] rounded-full object-cover" alt="image">
+            <h1>Aloo Cart</h1>
+          </div>
+          <button class="bg-[#219653] text-white w-full rounded-full max-w-[120px] h-[34px]">Get Offer</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="w-full bg-[#FCF5DC] py-10">
+    <div class="mx-auto max-w-[1250px] p-5">
+      <div class="flex items-center flex-wrap md:flex-row justify-between gap-2 font-[Outfit]">
+        <span>
+          <h1 class="text-[35px] md:text-[54px]  font-semibold">Deals of <span class="underline text-[#219653]">The
+              Day</span></h1>
+          <p class="text-[15px] ">Find deals of the day here & save money with offers and avail wide discounts on
+            everything.</p>
+        </span>
+        <button class="bg-[#013D29] w-full text-white max-w-[170px] h-[56px] rounded-full">Explore</button>
+      </div>
+      <div class="grid md:grid-cols-3 my-10 gap-5">
+        <div class="card w-full bg-white shadow-lg font-[Outfit] overflow-hidden rounded-[20px]">
+          <div class="relative">
+            <img
+              src="https://s3-alpha-sig.figma.com/img/6f3d/5316/db6a89a6ac7bd08b35b081b7f416e5de?Expires=1731888000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YCkuOx96qJa4yF2fd08nNPmLMHIIWDSashP1o964H94RkoDniFUfYpCGzbEuB04dFEUj4kO~G4rhY0WBKdEKwAN67zfZ9I9oEbGYStKYrha2ck2WqiR8qgRtR5Lixd07~mNJ-niFQc35jNGgQDZJgwyhKqWvlB9ftWSbPsSV2iOPNrDZBGnhIQIFxPrwptuT01BqUZrlqbTfIz7Olauzjr7yCNBOupiIEUIY~uzqvhVOOQn5htWBoyJ3aR5j7gdDjgzVGfh2gxLdE5nt~EZHkF44GFi0yLjsExCUNENNhIER4c3wsaTft8IlOO~GHWpdTSM9LnMRN-0LIUDw2KgidQ__"
+              class="w-full object-cover max-h-[200px]" alt="">
+            <div
+              class="absolute top-5 right-5 w-[40px] h-[40px] rounded-full bg-white shadow-lg flex items-center justify-center ">
+              <img src="../assets/Heart.svg" data-active="false" alt="Heart" class="w-[20px] cursor-pointer heart" />
+
+            </div>
+          </div>
+          <div class="p-4 ">
+            <div class="flex items-center justify-between gap-1">
+              <div class="flex gap-1 items-center">
+                <img src="../assets/str1.svg" alt="">
+                <img src="../assets/str1.svg" alt="">
+                <img src="../assets/str1.svg" alt="">
+                <img src="../assets/str2.png" alt="">
+              </div>
+              <div class="flex items-center gap-2"><img src="../assets/p.svg" alt=""> Flat 15% Off</div>
+            </div>
+            <h1 class="text-[24px] font-semibold mt-2 mb-1">Loaded Fries At Aloo Cart</h1>
+            <div class="flex items-center gap-2 mt-1">
+              <img src="../assets/l.svg" alt="icon">
+              <p class="text-[#8a8a8a] text-[14px]">Pakistan, Lahore .</p>
+            </div>
+            <div class="flex items-center gap-2 mt-2">
+              <img src="../assets/l.svg" alt="icon">
+              <p class="text-[#8a8a8a] text-[14px]">Pakistan, Lahore</p>
+              <div class="relative">
+                <button class="text-[#219653] text-[14px] more">+2 more</button>
+
+                <div
+                  class="hidden shadow-lg show animate-fade-in  border-[#219653] border-[1px] bg-white w-[300px] rounded-lg p-5 absolute -top-[14rem] -left-[8rem]">
+                  <h1 class="text-[20px] font-semibold mb-2">Locations</h1>
+                  <div class="flex items-center gap-2 mt-1">
+                    <img src="../assets/l.svg" alt="icon">
+                    <p class="text-[#8a8a8a] text-[14px]">Southwest, Washington D.C.</p>
+                  </div>
+                  <div class="flex items-center gap-2 mt-2">
+                    <img src="../assets/l.svg" alt="icon">
+                    <p class="text-[#8a8a8a] text-[14px]">East Village, New York</p>
+                  </div>
+                  <div class="flex items-center gap-2 mt-2">
+                    <img src="../assets/l.svg" alt="icon">
+                    <p class="text-[#8a8a8a] text-[14px]">Lower East Side, New York</p>
+                  </div>
+                  <div class="flex items-center gap-2 mt-2">
+                    <img src="../assets/l.svg" alt="icon">
+                    <p class="text-[#8a8a8a] text-[14px]">Midtown East, New York</p>
+                  </div>
+                  <div class="flex items-center gap-2 mt-2">
+                    <img src="../assets/l.svg" alt="icon">
+                    <p class="text-[#8a8a8a] text-[14px]">Southeast, Washington D.C.</p>
+                  </div>
+                  <div
+                    class="-rotate-90 w-fit absolute left-1/2 right-1/2 transform -translate-x-1/2 -translate-y-1/2 -bottom-[23px] ">
+                    <div class="bg-[#219653] w-[0.8px] h-[9px] rotate-[59deg] top-[4.3px] 	relative"></div>
+                    <div class="bg-[#219653] w-[0.8px] h-[10px] rotate-[-50deg]	relative "></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center justify-between gap-2 border-t-[1px] p-4 border-[#f3f3f3]">
+            <div class="flex items-center gap-3">
+              <img
+                src="https://s3-alpha-sig.figma.com/img/eadb/b36f/e671035e79447446d147615c9062f750?Expires=1731888000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qChAgL0qEoWU8gVk19KSdU8K7VwrZ0HlOUaNhzbuDEXlUh3vFeCwrU5tc~uJ-hLPevnT5kYsFbDRVcq8VK6NIQYYMm7fqgT0fTXwgirRbiSQJg27ymiPih5NFZT-OeAg8XgJ9CYaB7zf27TvWh8NrvegYd3-sz1Cb~FeB9vnO740jnhzQ6VsgL5LhtvmY5tthsgoBj48wnzDFo3XGBTsSr7akym2fGDY1q~emQnmV23siESNn5rnJXbk8187y7CEE~EXyLM6Dx83EI55I8W~YCH8PjuMkWogJ2ag4u30eXoGtb60sn8Jmv7uEr5eQ0YSRGDSfXkH-K20PwJnWxHcLQ__"
+                class="w-[36px] h-[36px] rounded-full object-cover" alt="image">
+              <h1>Aloo Cart</h1>
+            </div>
+            <button class="bg-[#219653] text-white w-full rounded-full max-w-[120px] h-[34px]">Get Offer</button>
+          </div>
+        </div>
+        <div class="card w-full bg-white shadow-lg font-[Outfit] overflow-hidden rounded-[20px]">
+          <div class="relative">
+            <img
+              src="https://s3-alpha-sig.figma.com/img/81c8/b547/3003447a1cfc6da3301bf265579b99b1?Expires=1731888000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Zd8mOBvSssBfJBwQoZCiuz4L-EoEWfKRr9rwW~djwjjA4wMVbTf~dCCqW-5vBhxaNbkZcyxI0Be9aEz7qYZjsGItMplqD2eOsJDrEg9MmU2RH1GUjUC5OLzsI6nth4GImnwOXVXpf9zbwK-4LYyG0mdj-kvOnhwHh0ain74j3NZolKxd8RtWJpsMZYKi6zrQf73ff8j6AhD13mqFPjJCQKkBU8f~4Aj7DwuIquszJmPAp12F19kpHD9h0~CZ-lM7Yk4PNYDCnJ3c3dOLtP8fTkiBEm9gflya6AQVWl0n21wT2VaTVD5PRcbnZ9WG0aIfoCb9z9ViYXEW9YKyH9fgyQ__"
+              class="w-full object-cover max-h-[200px]" alt="">
+            <div
+              class="absolute top-5 right-5 w-[40px] h-[40px] rounded-full bg-white shadow-lg flex items-center justify-center">
+              <img src="../assets/Heart.svg" data-active="false" alt="Heart" class="w-[20px] cursor-pointer heart" />
+
+            </div>
+          </div>
+          <div class="p-4 ">
+            <div class="flex items-center justify-between gap-1">
+              <div class="flex gap-1 items-center">
+                <img src="../assets/str1.svg" alt="">
+                <img src="../assets/str1.svg" alt="">
+                <img src="../assets/str1.svg" alt="">
+                <img src="../assets/str2.png" alt="">
+              </div>
+              <div class="flex items-center gap-2"><img src="../assets/p.svg" alt=""> Flat 15% Off</div>
+            </div>
+            <h1 class="text-[24px] font-semibold mt-2 mb-1">Loaded Fries At Aloo Cart</h1>
+            <div class="flex items-center gap-2 mt-1">
+              <img src="../assets/l.svg" alt="icon">
+              <p class="text-[#8a8a8a] text-[14px]">Pakistan, Lahore .</p>
+            </div>
+            <div class="flex items-center gap-2 mt-2">
+              <img src="../assets/l.svg" alt="icon">
+              <p class="text-[#8a8a8a] text-[14px]">Pakistan, Lahore</p>
+              <div class="relative">
+                <button class="text-[#219653] text-[14px] more">+2 more</button>
+
+                <div
+                  class="hidden shadow-lg show animate-fade-in  border-[#219653] border-[1px] bg-white w-[300px] rounded-lg p-5 absolute -top-[14rem] -left-[8rem]">
+                  <h1 class="text-[20px] font-semibold mb-2">Locations</h1>
+                  <div class="flex items-center gap-2 mt-1">
+                    <img src="../assets/l.svg" alt="icon">
+                    <p class="text-[#8a8a8a] text-[14px]">Southwest, Washington D.C.</p>
+                  </div>
+                  <div class="flex items-center gap-2 mt-2">
+                    <img src="../assets/l.svg" alt="icon">
+                    <p class="text-[#8a8a8a] text-[14px]">East Village, New York</p>
+                  </div>
+                  <div class="flex items-center gap-2 mt-2">
+                    <img src="../assets/l.svg" alt="icon">
+                    <p class="text-[#8a8a8a] text-[14px]">Lower East Side, New York</p>
+                  </div>
+                  <div class="flex items-center gap-2 mt-2">
+                    <img src="../assets/l.svg" alt="icon">
+                    <p class="text-[#8a8a8a] text-[14px]">Midtown East, New York</p>
+                  </div>
+                  <div class="flex items-center gap-2 mt-2">
+                    <img src="../assets/l.svg" alt="icon">
+                    <p class="text-[#8a8a8a] text-[14px]">Southeast, Washington D.C.</p>
+                  </div>
+                  <div
+                    class="-rotate-90 w-fit absolute left-1/2 right-1/2 transform -translate-x-1/2 -translate-y-1/2 -bottom-[23px] ">
+                    <div class="bg-[#219653] w-[0.8px] h-[9px] rotate-[59deg] top-[4.3px] 	relative"></div>
+                    <div class="bg-[#219653] w-[0.8px] h-[10px] rotate-[-50deg]	relative "></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center justify-between gap-2 border-t-[1px] p-4 border-[#f3f3f3]">
+            <div class="flex items-center gap-3">
+              <img
+                src="https://s3-alpha-sig.figma.com/img/c030/529d/10249ab08c60795694cd15b7577130e2?Expires=1731888000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=l3kRTHwDzfXcqOt5WJikxTVYSTn2sfSmFbhUN~doqklGT56Bcnf~OGLNAThXKERl-TprQxbLfc43K8C3MrWjkRXHnJNYJMqYCNoo9vOOmpDBANKAHJdXw7sKY4wn74OWdc6YzszCttfEitDj~KTocCZ7JmWUEBzRxX8nCIIDrzfzslpKQeuS6Tfcg2OK2FVCjli0DZ-tncUYiClXsJVDu-iBGKVkc9sGYmvCGMgKEw-XOx18sA1w7KNI6tUGHpwV7cWHmX7qB72HXDiMzjl9yVLYk4lO~dtO6Sj6MfpzMT1RXBFB0c82CQMLs12hT58ojEgeviX88bpbEOnjo~aUFQ__"
+                class="w-[36px] h-[36px] rounded-full object-cover" alt="image">
+              <h1>Aloo Cart</h1>
+            </div>
+            <button class="bg-[#219653] text-white w-full rounded-full max-w-[120px] h-[34px]">Get Offer</button>
+          </div>
+        </div>
+        <div class="card w-full bg-white shadow-lg font-[Outfit]  overflow-hidden rounded-[20px]">
+          <div class="relative">
+            <img
+              src="https://s3-alpha-sig.figma.com/img/eb0c/1048/f426d8074c036f219c2563246776146f?Expires=1731888000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=cJkILUq8cub1veYMt~XgOfQMfBSYdJUV1Wjw8Zq4difkKMDWNkWrTD8Ae18AZDwhXqlIcsvCsrv66IdS0oeHBuv4imQLun2rudwuCD~v9kZaI-Wn22AxWojg6bSm3~-T1KKx8BR~6ab4OJ9wTw2mAgEY4CAHLxZ9qf7zyREAgZYYHB7aAx~RGXKRzgHkyKhe1e33D~PoCQPOoWGYbvzY8ptd4e4SLv76j6TUDnOeOHQtg4a4qH3uvK~TsnqiYz1f6Bi7WQ5yqr5jtLBoJZSbuNB3~wGIhGkwD6YImN6uKM80KFFrIEu25bCzacY4OXDDoO4ir3EPTuUuacNL~Hz0Uw__"
+              class="w-full object-cover max-h-[200px]" alt="">
+            <div
+              class="absolute top-5 right-5 w-[40px] h-[40px] rounded-full bg-white shadow-lg flex items-center justify-center">
+              <img src="../assets/Heart.svg" data-active="false" alt="Heart" class="w-[20px] cursor-pointer heart" />
+
+            </div>
+          </div>
+          <div class="p-4 ">
+            <div class="flex items-center justify-between gap-1">
+              <div class="flex gap-1 items-center">
+                <img src="../assets/str1.svg" alt="">
+                <img src="../assets/str1.svg" alt="">
+                <img src="../assets/str1.svg" alt="">
+                <img src="../assets/str2.png" alt="">
+              </div>
+              <div class="flex items-center gap-2"><img src="../assets/p.svg" alt=""> Flat 15% Off</div>
+            </div>
+            <h1 class="text-[24px] font-semibold mt-2 mb-1">Loaded Fries At Aloo Cart</h1>
+            <div class="flex items-center gap-2 mt-1">
+              <img src="../assets/l.svg" alt="icon">
+              <p class="text-[#8a8a8a] text-[14px]">Pakistan, Lahore .</p>
+            </div>
+            <div class="flex items-center gap-2 mt-2">
+              <img src="../assets/l.svg" alt="icon">
+              <p class="text-[#8a8a8a] text-[14px]">Pakistan, Lahore</p>
+              <div class="relative">
+                <button class="text-[#219653] text-[14px] more">+2 more</button>
+
+                <div
+                  class="hidden show shadow-lg animate-fade-in  border-[#219653] border-[1px] bg-white w-[300px] rounded-lg p-5 absolute -top-[14rem] -left-[8rem]">
+                  <h1 class="text-[20px] font-semibold mb-2">Locations</h1>
+                  <div class="flex items-center gap-2 mt-1">
+                    <img src="../assets/l.svg" alt="icon">
+                    <p class="text-[#8a8a8a] text-[14px]">Southwest, Washington D.C.</p>
+                  </div>
+                  <div class="flex items-center gap-2 mt-2">
+                    <img src="../assets/l.svg" alt="icon">
+                    <p class="text-[#8a8a8a] text-[14px]">East Village, New York</p>
+                  </div>
+                  <div class="flex items-center gap-2 mt-2">
+                    <img src="../assets/l.svg" alt="icon">
+                    <p class="text-[#8a8a8a] text-[14px]">Lower East Side, New York</p>
+                  </div>
+                  <div class="flex items-center gap-2 mt-2">
+                    <img src="../assets/l.svg" alt="icon">
+                    <p class="text-[#8a8a8a] text-[14px]">Midtown East, New York</p>
+                  </div>
+                  <div class="flex items-center gap-2 mt-2">
+                    <img src="../assets/l.svg" alt="icon">
+                    <p class="text-[#8a8a8a] text-[14px]">Southeast, Washington D.C.</p>
+                  </div>
+                  <div
+                    class="-rotate-90 w-fit absolute left-1/2 right-1/2 transform -translate-x-1/2 -translate-y-1/2 -bottom-[23px] ">
+                    <div class="bg-[#219653] w-[0.8px] h-[9px] rotate-[59deg] top-[4.3px] 	relative"></div>
+                    <div class="bg-[#219653] w-[0.8px] h-[10px] rotate-[-50deg]	relative "></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center justify-between gap-2 border-t-[1px] p-4 border-[#f3f3f3]">
+            <div class="flex items-center gap-3">
+              <img
+                src="https://s3-alpha-sig.figma.com/img/048e/9d98/14baed5c8ba185d8ac2ac942a3f0c037?Expires=1731888000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=lJuESNhnwc07afaJmsgj1la30eFZbR9quoc1hDANRyJw1B36e03EpyxUvz3QiYsyoezz~5WHZUH6MXDcnimHK-NUtuGv5O1OAlszHpEiyE3USZZEvm~wz5qwwX2O8inZp1cJqfyarCE4H9dg-r9aQfJIgNpUSsfbiDnB2laRBo8WP6l-U3ZzivM5qC9fEVbO~5gtoKzG4nYDUZO2H1cy0okRuL9dxxB9OC3aNSGZZxm5IzQ3f4Rqmm9d4WDSIYyu0PgkoZP~CQhPtyWhMnzzBxMXqfxNBmBHz~2SrDB-NhtZBuz9i~NGbWmeTY7L~kIY3ojbt~XbnS7USDCu7NwwVg__"
+                class="w-[36px] h-[36px] rounded-full object-cover" alt="image">
+              <h1>Aloo Cart</h1>
+            </div>
+            <button class="bg-[#219653] text-white w-full rounded-full max-w-[120px] h-[34px]">Get Offer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    class="bg-[#F0FFF8]  mx-auto rounded-[20px] font-[Outfit] border-[#BED8CB] border-[1px] my-10 w-[90%] max-w-[1250px] p-5 grid md:grid-cols-2 gap-10">
+    <div class="w-full flex items-center justify-center "><img src="../assets/fun.svg" alt="image"></div>
+    <div class="flex justify-center  flex-col gap-5">
+      <h1 class="text-[30px] md:text-[54px] font-semibold leading-[33px] md:leading-[60px]">Download Our App To Get
+        Amazing <span class="text-[#219653] underline"> Deals</span></h1>
+      <p class="text-[15px] max-w-[370px]">Get new deals every day. Top deals have the best offers and share
+        them with you. To avail of offers, find our app in the play store</p>
+      <div class="flex items-center  gap-2 ">
+        <button><img src="../assets/stor.svg" alt=""></button>
+        <button><img src="../assets/apple.svg" alt=""></button>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="border-t-[1px] border-[#DEDEDE] mt-10 pt-5 count-section">
+    <div
+      class="grid grid-cols-2 sm:flex gap-5 items-center justify-between w-full mx-auto max-w-[1100px] p-5 font-[Outfit]">
+      <div class="text-center">
+        <h1 class="text-[24px] font-semibold counter" data-target="75000">0</h1>
+        <p class="text-[15px]">Deals</p>
+      </div>
+      <div class="text-center">
+        <h1 class="text-[24px] font-semibold counter" data-target="6000">0</h1>
+        <p class="text-[15px]">Retailers</p>
+      </div>
+      <div class="text-center">
+        <h1 class="text-[24px] font-semibold counter" data-target="2000000">0</h1>
+        <p class="text-[15px]">Active Users</p>
+      </div>
+      <div class="text-center">
+        <h1 class="text-[24px] font-semibold counter" data-target="1300000">0</h1>
+        <p class="text-[15px]">App Downloads</p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="bg-[#FCF5DC] mt-5">
+    <div class="font-[Outfit] mx-auto max-w-[1250px] px-5 min-h-[200px] flex items-center justify-center relative">
+      <div class="flex items-center flex-wrap justify-center gap-5 z-10">
+        <h1 class="text-[24px] font-semibold">For inquiries and more information</h1>
+        <button class="bg-[#013D29] w-[166px] h-[54px] rounded-full text-white">Get in Touch</button>
+      </div>
+      <img src="../assets/img.svg" alt="image" class="absolute top-0 right-1">
+    </div>
+  </section>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d27214.312021306672!2d74.236087!3d31.502483!3m2!1i1024!2i768!4f13.1!2m1!1shashed%20system!5e0!3m2!1sen!2s!4v1731169169730!5m2!1sen!2s"
+    width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+  <footer class="pt-5 font-[Outfit]">
+
+    <div class="flex items-start flex-wrap justify-between gap-10 max-w-[1250px] px-5 py-10 mx-auto">
+      <div class="flex items-start gap-5 w-fit">
+        <img src="../assets/fl.svg" alt="" class="w-[52px]">
+        <div class="flex flex-col gap-3">
+          <h1 class="text-[18px] font-semibold">Top Deals</h1>
+          <p class="text-[#808080] text-[15px] md:max-w-[280px]">Top Deals is an e-commerce site that connects
+            businesses
+            with customers by providing discounted offers, service coupons, or special offers. Top Deals brings a whole
+            ecommerce platform for business owners and customers to save a lot of money.</p>
+        </div>
+      </div>
+      <div class="flex flex-col gap-3 w-fit">
+        <h1 class="text-[18px] font-semibold">Our Company</h1>
+        <p class="text-[#808080] text-[15px]">About Us</p>
+        <p class="text-[#808080] text-[15px]">Privacy & Policy</p>
+        <p class="text-[#808080] text-[15px]">Contact Us</p>
+        <p class="text-[#808080] text-[15px]">FAQs</p>
+        <p class="text-[#808080] text-[15px]">Terms & Conditions</p>
+      </div>
+      <div class="flex flex-col gap-3 w-fit">
+        <h1 class="text-[18px] font-semibold">Our Payment Partners</h1>
+        <div class="flex items-center gap-2">
+          <img src="../assets/p1.svg" alt="" class="w-[60px]">
+          <img src="../assets/p2.svg" alt="" class="w-[60px]">
+          <img src="../assets/p3.svg" alt="" class="w-[60px]">
+          <img src="../assets/p4.svg" alt="" class="w-[60px]">
+        </div>
+      </div>
+    </div>
+    <div class="border-t">
+      <div class="flex items-center justify-between gap-2 max-w-[1250px] p-5 mx-auto">
+        <p class="text-[#808080] font-[Outfit]">© deelly 2023 . All rights reserved.</p>
+        <div class="flex items-center gap-2">
+          <img src="../assets/facebook.svg" alt="">
+          <img src="../assets/twitter.svg" alt="">
+          <img src="../assets/instagram2.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/index.js"></script>
+</body>
+
+</html>
