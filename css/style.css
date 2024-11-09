@@ -1,14 +1,7 @@
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 .custom-gradient {
     background: linear-gradient(93.17deg, #5ACD84 -22.23%, #56AEFF 106.85%);
   }
-  .max{
-    max-width: 1300px;
-    margin:0 auto;
-  }
+   
   .shado{
     box-shadow: 0px 20px 50px 0px #0000001A;
   }
